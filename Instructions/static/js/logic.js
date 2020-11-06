@@ -107,7 +107,7 @@ legend.onAdd = function(map){
 let div = L.DomUtil.create("div", 'info legend'),
 
 depth = [0, 10, 30, 50, 70, 90],
-color = [];
+color = ["yellow", "lightgreen", "green", "darkgreen", "orange", "darkred"];
 
 for (let i = 0; i<depth.length; i++){
   div.innerHTML +=
@@ -119,3 +119,4 @@ for (let i = 0; i<depth.length; i++){
 };
 legend.addTo(myMap);
 }
+
